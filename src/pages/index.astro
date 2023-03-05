@@ -1,55 +1,65 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
-<div class="wrapper">
-  <div class="blue-box"></div>
-  <header>
-    <h1>Greg Plumbly</h1>
-  </header>
-  <div class="red-box"></div>
-  <main></main>
-</div>
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Greg Plumbly</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="blue-box"></div>
+      <header>
+        <h1>Greg Plumbly</h1>
+      </header>
+      <div class="red-box"></div>
+      <main></main>
+    </div>
+  </body>
+</html>
 
 <style>
-html, body {
-  height: 100%;
-}
+  html,
+  body {
+    height: 100%;
+  }
 
-.wrapper {
-  --blue: hsl(250deg 100% 55%);
-  --yellow: hsl(50deg 100% 50%);
-  --red: hsl(350deg 100% 45%);
-  --white: hsl(0deg 0% 100%);
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 200px 1fr;
-  gap: 32px 16px;
-  min-height: 100%;
-}
+  .wrapper {
+    --blue: hsl(250deg 100% 55%);
+    --yellow: hsl(50deg 100% 50%);
+    --red: hsl(350deg 100% 45%);
+    --white: hsl(0deg 0% 100%);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 200px 1fr;
+    gap: 32px 16px;
+    min-height: 100%;
+  }
 
-body {
-  background: hsl(0deg 0% 2%);
-  padding: 0;
-  margin: 0;
-}
+  body {
+    background: hsl(0deg 0% 2%);
+    padding: 0;
+    margin: 0;
+  }
 
-.blue-box {
-  background: var(--blue)
-}
-.red-box {
-  background: var(--red);
-}
-header {
-  background: var(--yellow);
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 8px 16px;
-}
-main {
-  background: var(--white);
-}
+  .blue-box {
+    background: var(--blue);
+  }
+  .red-box {
+    background: var(--red);
+  }
+  header {
+    background: var(--yellow);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 8px 16px;
+  }
+  main {
+    background: var(--white);
+  }
 </style>
